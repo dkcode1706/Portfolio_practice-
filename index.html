@@ -26,11 +26,11 @@
             <br>
             <nav class="nav_aside">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="">Project</a></li>
-                    <li><a href="">Certification</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#certificate">Certification</a></li>
                 </ul>
             </nav>
             <hr id="aside_hr">
@@ -47,16 +47,16 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Project</a>
+                            <a class="nav-link" href="#project">Project</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Certification</a>
+                            <a class="nav-link" href="#certificate">Certification</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" aria-disabled="true">Contact</a>
@@ -68,7 +68,7 @@
 
             <main>
                 <div class="hero">
-
+                    <!-- hero -->
                     <div>
                         <article class="intro">
                             <p class="great">👋 I'm </p>
@@ -96,6 +96,9 @@
                     <img src="./image/pattern.png" alt="">
                 </div>
                 <hr id="aside_hr">
+
+                <!-- keysights
+                  -->
                 <div class="keysights">
                     <div class="stats">
                         <div class="img">
@@ -165,17 +168,17 @@
                     </article>
                     <div class="divider"></div>
 
-                    <article class="item ">
-                        <section class="item">
-                            <h3>My Skills</h3>
-                            <ul type="none">
-                                <li>Python</li>
-                                <li>SQL</li>
-                                <li>PowerBI</li>
-                                <li>DSA</li>
-                            </ul>
-                        </section>
-                    </article>
+
+                    <section class="item">
+                        <h3>My Skills</h3>
+                        <ul type="none" class="skill_ul">
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>PowerBI</li>
+                            <li>DSA</li>
+                        </ul>
+                    </section>
+
                     <div class="divider"></div>
                 </article>
                 <hr id="aside_hr">
@@ -222,7 +225,169 @@
                         </div>
                     </div>
                     <hr class="blue_hr">
+
+                    <div class="gird_card">
+                        <div class="item_card">
+                            <section>
+                                <h3>6</h3>
+                                <p>Tools used</p>
+                            </section>
+                        </div>
+                        <div class="item_card">
+                            <section>
+                                <h3>14</h3>
+                                <p>Total project uses</p>
+                            </section>
+                        </div>
+                        <div class="item_card">
+                            <section>
+                                <h3>Power BI</h3>
+                                <p>Most-used tool</p>
+                            </section>
+                        </div>
+
+                    </div>
                 </section>
+                <hr id="aside_hr">
+                <br>
+                <hr id="aside_hr">
+                <section id="project">
+                    <h2>My Projects</h2>
+                    <p>A few things I've built while learning to turn data into something useful.</p>
+                    <br>
+                    <div class="card_project">
+                        <div class="card" style="width: 38rem;">
+                            <img src="Project/project1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Why Do Some Regions Stay Poor?</h4>
+                                <p class="card-text">A global GDP and infrastructure analysis across 180+ countries,
+                                    looking at how electricity access and rail connectivity correlate with national
+                                    wealth.
+                                    <br>
+                                    <strong> Power BI, SQL, Global Data</strong>
+                                </p>
+                                <a href="./Project/project1.png" target="_blank" class="btn btn-primary">view</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 38rem;">
+                            <img src="./Project/project2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">RemedyVault</h4>
+                                <p class="card-text">Built for the Girls in STEM Global Hackathon — a platform for
+                                    preserving India's disappearing oral traditional knowledge, built through primary
+                                    research and data work.
+                                    <br>
+                                    <strong> SQL, Python, Power BI</strong>
+                                </p>
+                                <a href="./Project/project2.png" target="_blank" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 38rem;">
+                            <img src="./Project/project3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Electric Vehicles Sales — India</h4>
+                                <p class="card-text">Analyzed a decade of EV sales data across India (2014–2024) and
+                                    built a prediction model on top of it to explore where adoption is headed next.
+                                    <br>
+                                    <strong> Power BI, Python, Prediction Model</strong>
+                                </p>
+                                <a href="./Project/project3.png" target="_blank" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 38rem;">
+                            <img src="./Project/project4.jpg" class="card-img-top" alt="..." height="45vh">
+                            <div class="card-body">
+                                <h4 class="card-title">Shark Tank India — Investment Analysis</h4>
+                                <p class="card-text">Broke down 121 pitches and 59 deals from Shark Tank India to see
+                                    what actually gets funded — equity ranges, industry trends, and which sharks invest
+                                    where.
+                                    <br>
+                                    <strong> Power BI, Data Analysis</strong>
+                                </p>
+                                </p>
+                                <a href="./Project/project4.jpg" target="_blank" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 38rem;">
+                            <img src="..." class="card-img-top" alt="currently working">
+                            <div class="card-body">
+                                <h4 class="card-title">Efficiency vs Expansion</h4>
+                                <p class="card-text">Mapping agricultural growth across Indian districts — whether yield
+                                    improvement or area expansion drives growth. Dashboard still in progress.
+                                    <br>
+                                    <strong> SQL, Power BI</strong>
+                                </p>
+                                <a href="#" class="btn btn-primary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <hr id="aside_hr">
+                    <br>
+
+
+                </section>
+                <hr id="aside_hr">
+                <section id="certificate">
+                    <h3>Certifications</h3>
+                    <br>
+                    <p class="course">Courses and programs I've completed alongside my coursework.</p>
+                    <hr id="aside_hr">
+                    <div class="row g-0 bg-body-secondary position-relative cet_hover">
+                        <div class="col-md-6 mb-md-0 p-md-4 img_cet_item">
+                            <img src="./Cet/isro-space-science.jpeg" class="w-100" alt="isro-space-science">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0">
+                            <h4 class="mt-0">Research and Career Opportunities for Space Science and Technology in India
+                            </h4>
+                            <p class="cet_p">ISRO · IIRS Dehradun</p>
+                            <p class="cet_date">Dec 2025</p>
+                            <a href="./Cet/isro-space-science.jpeg" class="stretched-link">View</a>
+                        </div>
+                    </div>
+                    <hr class="blue_hr">
+                    <div class="row g-0 bg-body-secondary position-relative">
+                        <div class="col-md-6 mb-md-0 p-md-4 img_cet_item">
+                            <img src="./Cet/unicef-nnis.png" class="w-100" alt="...">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0">
+                            <h4 class="mt-0">NNIS Data Value Chain</h4>
+                            <p class="cet_p">UNICEF · Global Nutrition Cluster</p>
+                            <p class="cet_date">March 2026</p>
+                            <a href="#" class="stretched-link">View</a>
+                        </div>
+                    </div>
+                    <hr class="blue_hr">
+                    <div class="row g-0 bg-body-secondary position-relative">
+                        <div class="col-md-6 mb-md-0 p-md-4 img_cet_item">
+                            <img src="./Cet/microsoft-365-ai.jpeg" class="w-100" alt="...">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0 ">
+                            <h5 class="mt-0">Introduction to Microsoft 365 and AI Administration</h5>
+                            <p class="cet_p">Microsoft Learn</p>
+                            <p class="cet_date">April 2026</p>
+                            <a href="./Cet/microsoft-365-ai.jpeg" class="stretched-link">View</a>
+                        </div>
+                    </div>
+                    <hr class="blue_hr">
+                    <div class="row g-0 bg-body-secondary position-relative">
+                        <div class="col-md-6 mb-md-0 p-md-4 img_cet_item">
+                            <img src="./Cet/mindluster-pandas.jpeg" class="w-100" alt="...">
+                        </div>
+                        <div class="col-md-6 p-4 ps-md-0">
+                            <h5 class="mt-0">Python Data Analysis with Pandas</h5>
+                            <p class="cet_p">MindLuster</p>
+                            <p class="cet_date">Nov 2025</p>
+                            <a href="./Cet/mindluster-pandas.jpeg" class="stretched-link">View</a>
+                        </div>
+                    </div>
+                    <hr id="aside_hr">
+                </section>
+                <br>
+                <hr id="aside_hr">
+
+
+
 
             </main>
 

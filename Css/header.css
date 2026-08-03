@@ -59,7 +59,7 @@
 
 .action div {
     width: 30%;
-    height: 8vh;
+    height: 13vh;
     cursor: pointer;
     background: none;
     border-top: 1px solid rgb(30, 26, 26);
@@ -146,6 +146,11 @@
     text-align: center;
 }
 
+.skill_ul {
+    height: 100%;
+    line-height: 3;
+}
+
 
 
 /*skills*/
@@ -159,7 +164,7 @@
 
 #skills>h2 {
     text-align: center;
-    padding-top: 8px;
+    padding-top: 16px;
 }
 
 /*chart*/
@@ -252,9 +257,88 @@
 .tableau {
     background: #cf9172;
 }
- 
-.blue_hr{
+
+.blue_hr {
     border: none;
     height: 3px;
-    background: linear-gradient(45deg, grey,rgb(17 47 74),grey);
+    background: linear-gradient(45deg, grey, rgb(17 47 74), grey);
+}
+
+.gird_card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.item_card h3 {
+    font-size: xx-large;
+    color: #4db3ef;
+}
+
+.item_card p {
+    font-size: small;
+    color: gray;
+}
+
+/* projects */
+.project {
+    width: 100vw;
+
+    overflow-x: scroll;
+}
+
+.card_project {
+    display: grid;
+    grid-template-columns: repeat(5, 45vw);
+    justify-items: center;
+    overflow-x: scroll;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: wheat;
+    background: linear-gradient(155deg, #1a2e4a, #010811);
+}
+
+.card:hover {
+    box-shadow: 13px 20px 20px 8px #393535;
+    transform: scale(.98);
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+    width: 100%;
+    height: 60vh;
+}
+
+/* certification */
+
+#certificate h3,
+.course {
+    padding-left: 25px;
+}
+
+.bg-body-secondary {
+    --bs-bg-opacity: 1;
+    background-color: transparent !important;
+}
+
+.img_cet_item {
+    width: 30vw;
+}
+
+.cet_p {
+    color: #4db3ef
+}
+
+.cet_date {
+    color: gray;
+}
+
+.row:hover {
+    background: linear-gradient(136deg, #4f4e4e -3%, transparent, #0e263f82) !important;
 }

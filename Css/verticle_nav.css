@@ -49,8 +49,8 @@
 
 #aside_hr {
     border: none;
-    height: 2px;
-    background: linear-gradient(45deg, rgb(11 10 10), rgba(67, 71, 77), rgb(11 10 10))
+    height: 3px;
+    background: linear-gradient(45deg, rgb(11 10 10), rgb(255 255 255), rgb(11 10 10));
 }
 
 #linkedin {
