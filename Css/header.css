@@ -116,15 +116,17 @@
 
 #about {
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     display: flex;
     justify-content: space-evenly;
 }
 
 .item {
+    text-align: center;
     width: 70%;
 
 }
+
 .item h2 {
     text-align: center;
     margin: 0;
@@ -134,12 +136,125 @@
 .item p {
     margin: 0;
     padding: 0;
-   
+
     word-wrap: break-word;
 }
 
-.about_table{
+.about_table {
     row-gap: 20px;
     height: 100%;
     text-align: center;
+}
+
+
+
+/*skills*/
+#skills {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    border-radius: 8%;
+    background-color: rgb(21, 21, 48);
+}
+
+#skills>h2 {
+    text-align: center;
+    padding-top: 8px;
+}
+
+/*chart*/
+.skills-chart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 120px;
+}
+
+.donut {
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background:
+        conic-gradient(#3f92e0 0deg 128deg,
+            #6544db 128deg 205deg,
+            #4db3ef 205deg 282deg,
+            #9fd5f7 282deg 334deg,
+            #cf9172 334deg 360deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donut-center {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #081624;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donut-center h2 {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.donut-center span {
+    color: #a7a7a7;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+.chart-info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.info p {
+    color: #e7e7e7;
+    font-size: 22px;
+    margin: 0;
+}
+
+.color {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.powerbi {
+    background: #3f92e0;
+}
+
+.sql {
+    background: #6544db;
+}
+
+.python {
+    background: #4db3ef;
+}
+
+.excel {
+    background: #9fd5f7;
+}
+
+.tableau {
+    background: #cf9172;
+}
+ 
+.blue_hr{
+    border: none;
+    height: 3px;
+    background: linear-gradient(45deg, grey,rgb(17 47 74),grey);
 }
