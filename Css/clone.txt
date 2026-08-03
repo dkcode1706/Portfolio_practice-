@@ -1,0 +1,179 @@
+/* side display */
+.verticle_nav {
+    box-sizing: border-box;
+    padding: 15px;
+    height: 100vh;
+    width: 12vw;
+    background-color: rgba(3, 10, 21);
+    line-height: 1.5;
+    overflow: auto;
+
+    /* background-color: rgb(231, 234, 238); */
+}
+
+/*logo*/
+.name_in_verticle {
+    font-size: xx-large;
+    font-style: normal;
+    text-align: center;
+}
+
+.post {
+    color: rgba(92, 62, 158);
+    font-weight: bold;
+    text-align: center;
+}
+
+/*nav in verticle*/
+.nav_verticle ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style-type: none;
+}
+
+
+
+.verticle_nav ul a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.verticle_nav ul li a:hover {
+
+    color: blue;
+    transform: scale(1.5);
+    transition-duration: .5s;
+    border-left: 1px solid red;
+}
+
+/*header css*/
+/* Main div*/
+.main {
+    display: flex;
+}
+
+.body {
+    height: 100vh;
+    width: 88vw;
+    background-color: rgba(0, 6, 15);
+    /* margin-left: .5vw; */
+
+}
+
+/* horizontal nav file*/
+.horizontal_nav {
+    border: 1px solid;
+    border-radius: 26%;
+    width: 70%;
+    height: 50%;
+    position: relative;
+    left: 28%;
+    top: 20px;
+
+}
+
+.horizontal_nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 63px;
+    list-style: none;
+    padding: 20px 0px;
+    
+
+}
+
+.horizontal_nav ul a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal_nav ul li a:hover {
+
+    color: rgba(135, 93, 218);
+
+    transform: scale(1.3);
+    transition-duration: .5s;
+    border-bottom: 3px solid rgba(31, 24, 76);
+}
+
+/* html file */
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="./Css/common.css">
+    <link rel="stylesheet" href="./Css/header.css">
+    <link rel="stylesheet" href="./Css/verticle_nav.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="verticle_nav">
+            <div class="logo">
+                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#2752d2"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Left Bracket -->
+                    <polyline points="8 4 2 12 8 20" />
+                    <!-- Right Bracket -->
+                    <polyline points="16 4 22 12 16 20" />
+                </svg>
+                <p class="name_in_verticle"><strong>Simran <br>Verma</strong></p>
+                <p class="post">DATA ANALYST</p>
+            </div>
+            <br>
+            <div class="nav_verticle">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Certification</a></li>
+                </ul>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <p class="post">Let's Connect</p>
+            <br>
+            <a href="#"> <img src="./image/linkedin.png" alt="linkedin" width="20px"></a>
+
+
+        </div>
+        <div class="body" id="home">
+
+            <header>
+                <nav class="horizontal_nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Project</a></li>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="">Certification</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <div class="intro">
+                    <p class="great">👋 I'm </p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+.verticle_nav {
+    height: 100vh;
+    width: 12vw;
+    background-color: rgba(3, 10, 21);
+    margin: auto;
+    border-radius: 5%;
+    overflow: hidden;
+    position: fixed;
+    left: 12px;
+}
+
+.verticle_nav section,
+.verticle_nav p {
+    text-align: center;
+}
+
+.post {
+    color: rgba(92, 62, 158);
+}
+
+.nav_aside ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0;
+    text-align: center;
+
+}
+
+.nav_aside ul a {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav_aside ul a:hover,
+.nav_aside ul a:focus {
+    background: linear-gradient(45deg, rgba(96, 34, 151), rgba(23, 19, 73));
+    text-decoration: underline red;
+    transform: scale(1.4);
+    border-right: 1px solid red;
+
+
+}
+
+#aside_hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(45deg, rgb(11 10 10), rgba(67, 71, 77), rgb(11 10 10))
+}
+
+#linkedin {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
