@@ -1,0 +1,431 @@
+/* ==========================================================
+   RESPONSIVE CSS
+   Add this AFTER your current CSS file
+   ========================================================== */
+
+
+/* ===================== 1200px ===================== */
+
+@media screen and (max-width:1200px){
+
+    .verticle_nav{
+        width:18vw;
+    }
+
+    .body{
+        width:79%;
+        left:19%;
+    }
+
+    .great{
+        width:22%;
+    }
+
+    .skills-chart{
+        gap:50px;
+    }
+
+    .card_project{
+        grid-template-columns:repeat(5,60vw);
+    }
+
+}
+
+
+/* ===================== TABLET ===================== */
+
+@media screen and (max-width:992px){
+
+    /* Remove Sidebar */
+
+    .verticle_nav{
+        display:none;
+    }
+
+    .main{
+        display:block;
+        margin-top:0;
+    }
+
+    .body{
+        width:100%;
+        left:0;
+        border-radius:0;
+        padding:10px;
+    }
+
+
+    /* Navigation */
+
+    .nav_main ul{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:10px;
+        padding:0;
+    }
+
+    .nav_main ul li{
+        width:auto;
+    }
+
+    .nav_main ul a{
+        display:block;
+        padding:10px 18px;
+        border-radius:8px;
+    }
+
+
+    /* Hero */
+
+    .hero{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:30px;
+    }
+
+    .hero img{
+        width:60%;
+        max-width:350px;
+    }
+
+    .intro{
+        margin:0;
+    }
+
+    .great{
+        width:180px;
+        margin:auto;
+    }
+
+    .action{
+        justify-content:center;
+        gap:20px;
+        flex-wrap:wrap;
+    }
+
+    .action div{
+        width:220px;
+        height:65px;
+    }
+
+    .action div a{
+        padding-top:20px;
+    }
+
+
+    /* Key Highlights */
+
+    .keysights{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:25px;
+        height:auto;
+        padding:20px 10px;
+    }
+
+    .stats{
+        display:flex;
+        align-items:center;
+        gap:12px;
+        width:170px;
+    }
+
+    .stats img{
+        width:42px;
+    }
+
+    .divider{
+        display:none;
+    }
+
+    .content h2{
+        font-size:24px;
+    }
+
+    .content p{
+        font-size:13px;
+    }
+
+
+    /* About */
+
+    #about{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+        height:auto;
+        padding:20px;
+    }
+
+    .item{
+        width:100%;
+    }
+
+
+    /* Skills */
+
+    #skills{
+        height:auto;
+        padding-bottom:40px;
+    }
+
+    .skills-chart{
+        flex-direction:column;
+        gap:40px;
+    }
+
+    .gird_card{
+        grid-template-columns:repeat(3,1fr);
+        gap:20px;
+    }
+
+
+    /* Projects */
+
+    .project{
+        overflow-x:hidden;
+    }
+
+    .card_project{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:35px;
+        justify-items:center;
+        overflow-x:hidden;
+    }
+
+    .card{
+        width:90% !important;
+        max-width:700px;
+    }
+
+    .card-img-top{
+        height:320px;
+    }
+
+
+    /* Certificates */
+
+    .img_cet_item{
+        width:100%;
+    }
+
+}
+
+
+/* ===================== MOBILE ===================== */
+
+@media screen and (max-width:768px){
+
+    .body{
+        padding:8px;
+    }
+
+    .intro_section h1{
+        font-size:2.2rem;
+    }
+
+    .great{
+        width:150px;
+    }
+
+    .hero img{
+        width:80%;
+    }
+
+    .action{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .action div{
+        width:90%;
+    }
+
+
+    /* Key Highlights */
+
+    .keysights{
+        gap:18px;
+    }
+
+    .stats{
+        width:150px;
+    }
+
+    .stats img{
+        width:36px;
+    }
+
+    .content h2{
+        font-size:20px;
+    }
+
+    .content p{
+        font-size:12px;
+    }
+
+
+    /* About */
+
+    #about{
+        grid-template-columns:1fr;
+    }
+
+
+    /* Donut */
+
+    .donut{
+        width:260px;
+        height:260px;
+    }
+
+    .donut-center{
+        width:150px;
+        height:150px;
+    }
+
+    .donut-center h2{
+        font-size:42px;
+    }
+
+    .chart-info p{
+        font-size:18px;
+    }
+
+
+    /* Skill Cards */
+
+    .gird_card{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+
+    /* Projects */
+
+    .card{
+        width:95% !important;
+    }
+
+    .card-img-top{
+        height:250px;
+    }
+
+
+    /* Certificates */
+
+    .row{
+        display:block !important;
+    }
+
+}
+
+
+/* ===================== SMALL MOBILE ===================== */
+
+@media screen and (max-width:480px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .nav_main ul{
+        gap:6px;
+    }
+
+    .nav_main ul a{
+        padding:8px 12px;
+        font-size:14px;
+    }
+
+    .intro_section h1{
+        font-size:1.8rem;
+    }
+
+    .great{
+        width:130px;
+        font-size:15px;
+    }
+
+    .hero img{
+        width:95%;
+    }
+
+
+    /* Key Highlights */
+
+    .keysights{
+        justify-content:space-evenly;
+        gap:12px;
+    }
+
+    .stats{
+        width:130px;
+    }
+
+    .stats img{
+        width:32px;
+    }
+
+    .content h2{
+        font-size:18px;
+    }
+
+    .content p{
+        font-size:11px;
+    }
+
+
+    /* Skills */
+
+    .donut{
+        width:210px;
+        height:210px;
+    }
+
+    .donut-center{
+        width:120px;
+        height:120px;
+    }
+
+    .donut-center h2{
+        font-size:30px;
+    }
+
+    .chart-info{
+        gap:18px;
+    }
+
+    .chart-info p{
+        font-size:15px;
+    }
+
+    .gird_card{
+        grid-template-columns:1fr;
+    }
+
+
+    /* Projects */
+
+    .card-img-top{
+        height:200px;
+    }
+
+    .card-body{
+        padding:15px;
+    }
+
+    .card-title{
+        font-size:1.2rem;
+    }
+
+    .card-text{
+        font-size:.9rem;
+    }
+
+}
